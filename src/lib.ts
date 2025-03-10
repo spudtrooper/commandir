@@ -72,7 +72,7 @@ const addToProgram = (program: Command, root: string, options?: Options) => {
                 if (ext === ".sh") {
                     const cmdName = path.basename(file.name, ext);
                     const commandPath = [...prefix, cmdName];
-                    const dirPath = commandPath.slice(0, commandPath.length - 1).filter(dir => dir !== "scripts");
+                    const dirPath = commandPath.slice(0, commandPath.length - 1).filter(d => !exclude.includes(d));
                     const action = commandPath[commandPath.length - 1];
                     const relPath = path.relative(root, filePath)
                     paths.push({ dirPath, action, relPath });
