@@ -46,7 +46,7 @@ yarn ts-node src/example.ts help
 ```
 
 
-See [https://github.com/spudtrooper/commandir/blob/main/src/lib.ts#L20](this comment) for more details.
+See [this coment](https://github.com/spudtrooper/commandir/blob/main/src/lib.ts#L20) for more details.
 
 ## Goals
 
